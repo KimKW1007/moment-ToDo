@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today To Do</title>
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/login.js" defer></script>
+  <script src="./js/clock.js" defer></script>
+  <script src="./js/bgImage.js" defer></script>
+  <script src="./js/todo.js" defer></script>
+</head>
+<body>
+  <div class="loading"></div>
+  <div id="wrap">
+    <div class="clock-box">
+      <h2 id="clock">00:00</h2>
+    </div>
+    <div class="login-box">
+      <form id="login-form" class="hidden">
+        <input type="text" placeholder="What is your name?" required maxlength="15"/>
+        <button title="Log In">Log In</button>
+      </form>
+      <div class="greeting-box">
+        <h1 id="greeting" class="hidden"></h1>
+        <div class="logout-box hidden" >
+          <a href="#" class="logout-btn">
+            <span></span>
+            <span></span>
+          </a>
+          <div class="detail-box">
+            <span></span>
+            <div class="desc">
+              <p>This button is <em>Not remove</em> Your Todo-List.</p>
+              <p><i>Only Change</i> Your Name.</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="todo-box hidden" >
+      <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required/>
+      </form>
+      <ul id="todo-list">
+    
+      </ul>
+      <button class="clearBtn">All CLEAR</button>
+    </div>
+  </div>
+  <div id="wrapBg"></div>
+
+</body>
+</html>
